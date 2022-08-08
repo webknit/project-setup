@@ -5,8 +5,10 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
 const Home: NextPage = () => {
-    console.log('yo');
-    alert('yo');
+    // Will fail in
+    // var indexMap = myArray.reduce(function (memo, item, index) {
+    //     memo[item] = index;
+    // }, {});
 
     return (
         <div className={styles.container}>
