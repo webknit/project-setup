@@ -14,3 +14,5 @@ jobs:
           npm install
           npm run build-storybook
           npx @percy/cli snapshot storybook-static/
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
