@@ -1,0 +1,17 @@
+version: 2
+upload:
+  files: "**/*.{png,jpg,jpeg}"
+  ignore: ""
+  stripExtensions: false
+snapshot:
+  widths:
+    - 375
+    - 768
+    - 1920
+  minHeight: 1024
+  percyCSS: ""
+discovery:
+  allowedHostnames: []
+  networkIdleTimeout: 100
+static:
+  cleanUrls: false
