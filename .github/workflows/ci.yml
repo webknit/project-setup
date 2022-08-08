@@ -12,7 +12,7 @@ jobs:
       - name: Percy testing
         run: |
           npm install
-          npm run build-storybook
-          npm run percy storybook ./storybook-static
+          npm run build
+          npx @percy/cli snapshot out/
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
