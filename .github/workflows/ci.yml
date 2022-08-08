@@ -11,5 +11,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Percy test
         run: |
+          npm install
           npm run build
           npx @percy/cli snapshot out/
