@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  my_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out our code
+        uses: actions/checkout@v3
+      - name: Percy test
+        run: |
+          npm install
+          npm run build
+          npx @percy/cli snapshot out/
