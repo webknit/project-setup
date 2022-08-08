@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Checking out our code
         uses: actions/checkout@v3
-      - name: Percy test
+      - name: Percy testing
         run: |
           npm install
           npm run build
-          npx @percy/cli snapshot out/
+          npx @percy/cli snapshot storybook-static/
