@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> snapshot tests should render with no data 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  hello
+</button>
+`;
