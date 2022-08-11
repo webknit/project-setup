@@ -6,9 +6,9 @@ Project set up with the following stack
 -   [x] Storybook
 -   [x] Tailwind
 -   [x] Jest
--   [ ] React testing library
+-   [x] React testing library
 -   [ ] Testcafe
--   [ ] Eslint
+-   [x] Eslint
 -   [x] Percy
--   [ ] Husky
+-   [x] Husky
 -   [ ] Github Reviewer
