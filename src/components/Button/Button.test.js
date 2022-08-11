@@ -1,3 +1,4 @@
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Button from './index';
 
@@ -10,8 +11,10 @@ describe('<Button />', () => {
     });
 
     describe('unit tests', () => {
-        // test('should render ', () => {
-        //     render(<Button />);
-        // });
+        it('should render with label args as text', async () => {
+            render(<Button testId={'test-button'} label="In here!" />);
+            const element = await screen.findByTestId('test-button');
+            expect(element.textContent).toEqual('In here!');
+        });
     });
 });
