@@ -1,5 +1,5 @@
 import React from 'react';
-// import './button.css';
+import './button.css';
 
 interface ButtonProps {
     /**
@@ -31,6 +31,7 @@ interface ButtonProps {
  */
 const Button = ({ primary = false, size = 'medium', backgroundColor, label, testId, ...props }: ButtonProps) => {
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+    console.log(mode);
     return (
         <button
             type="button"
