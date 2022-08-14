@@ -12,4 +12,4 @@ Project set up with the following stack
 -   [x] Percy
 -   [x] Husky
 -   [ ] Github Reviewer
--   [ ] Plop
+-   [x] Plop
